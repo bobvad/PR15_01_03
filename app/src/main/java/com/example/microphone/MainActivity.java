@@ -22,4 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fileName = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/record.3gpp";
     }
+    private void releaseRecorder()
+    {
+        if(mediaRecorder != null)
+        {
+            mediaRecorder.release();
+            mediaRecorder = null;
+        }
+    }
 }
