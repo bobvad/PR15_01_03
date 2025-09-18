@@ -7,13 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="134dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="recordStart"
+            android:text="Старт" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recordStop"
+            android:text="Стоп" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="239dp"
+        android:layout_height="51dp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="60dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="playStop"
+            android:text="Старт" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:onClick="playStop"
+            android:text="Стоп" />
+
+    </LinearLayout>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="394dp"
+        android:layout_height="22dp"
+        android:text="Запись"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="397dp"
+        android:layout_height="23dp"
+        android:text="Воспроизвести"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="111dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
