@@ -8,63 +8,57 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="49dp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="134dp">
-
-        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:onClick="recordStart"
-            android:text="Старт" />
-
-        <Button
+            android:text="Запись">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordStart"
+                android:text="Старт"
+                android:layout_marginRight="20dp">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordStop"
+                android:text="Стоп"
+                android:layout_marginRight="20dp">
+            </Button>
+        </LinearLayout>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="recordStopp"
-            android:text="Стоп" />
-
-
+            android:text="Воспроизвести">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="playStart"
+                android:text="Старт"
+                android:layout_marginRight="20dp">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="playStop"
+                android:text="Стоп"
+                android:layout_marginRight="20dp">
+            </Button>
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="239dp"
-        android:layout_height="51dp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="60dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:onClick="playStop"
-            android:text="Старт" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:onClick="playStop"
-            android:text="Стоп" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="394dp"
-        android:layout_height="22dp"
-        android:text="Запись"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="38dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="397dp"
-        android:layout_height="23dp"
-        android:text="Воспроизвести"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="111dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
